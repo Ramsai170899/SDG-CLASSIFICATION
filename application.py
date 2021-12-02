@@ -55,5 +55,6 @@ with body:
                 st.header('Sdg Classification Results')
                 st.dataframe(result)
                 df = pd.DataFrame(result, columns = ["Probability"])
+                df.sort_values(by=['Probability'], ascending=False)
                 st.bar_chart(df)            
     
