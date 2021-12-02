@@ -6,6 +6,13 @@ import numpy as np
 import pandas as pd
 
 
+[theme]
+primaryColor="#F63366"
+backgroundColor="#FFFFFF"
+secondaryBackgroundColor="#F0F2F6"
+textColor="#262730"
+font="sans serif"
+
 header = st.beta_container()
 body = st.beta_container()
 classify_container = st.beta_container()
