@@ -6,13 +6,6 @@ import numpy as np
 import pandas as pd
 
 
-[theme]
-primaryColor="#F63366"
-backgroundColor="#FFFFFF"
-secondaryBackgroundColor="#F0F2F6"
-textColor="#262730"
-font="sans serif"
-
 header = st.beta_container()
 body = st.beta_container()
 classify_container = st.beta_container()
@@ -45,8 +38,14 @@ with header:
     st.image('./EvaluatingSDGs.png')
 
 with body:
+    [theme]
+    primaryColor="#F63366"
+    backgroundColor="#FFFFFF"
+    secondaryBackgroundColor="#F0F2F6"
+    textColor="#262730"
+    font="sans serif"
+    
     rawtext = st.text_area('Enter Text Here')
-
 
     uploaded_file = st.file_uploader(
         'Choose your .txt file', type="txt")
