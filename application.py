@@ -34,12 +34,12 @@ def classify(a):
 
 with header:
     titl, imga = st.beta_columns(2)
-    st.title('Sustainable Development Goal Classification') 
+    st.title('Document Classification for SDG') 
      
 
 with body:
     rawtext = st.text_area('Enter Text Here')
-  
+    st.image('./EvaluatingSDGs.png')
 
     uploaded_file = st.file_uploader(
         'Choose your .txt file', type="txt")
