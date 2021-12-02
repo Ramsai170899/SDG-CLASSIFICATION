@@ -12,7 +12,7 @@ body = st.beta_container()
 classify_container = st.beta_container()
 
 def classify(a):
-    filename = 'pipe4_pickle.pkl'
+    filename = 'pipe4_pickle'
     model_reloaded = pickle.load(open(filename, 'rb'))
     
     te =[]
