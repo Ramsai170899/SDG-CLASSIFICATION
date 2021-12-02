@@ -33,6 +33,10 @@ def classify(a):
 
 
 with header:
+    col1, col2 = st.columns(2)
+    col1.write("This is column 1")
+    col2.write("This is column 2")
+    
     titl, imga = st.beta_columns(2)
     st.title('Document Classification for SDG') 
     st.image('./EvaluatingSDGs.png')
