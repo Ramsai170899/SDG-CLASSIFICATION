@@ -39,7 +39,7 @@ with header:
 
 with body:
     
-    rawtext = st.text_area('Enter Text Here')
+    rawtext = st.text_area('You can also enter your sample text here :')
 
     uploaded_file = st.file_uploader(
         'Choose your .txt file', type="txt")
@@ -49,7 +49,7 @@ with body:
         with classify_container:
             if rawtext == "":
                 st.header('Results')
-                st.write('Please enter text or upload the file')
+                st.write('You can upload the file here :')
             else:
                 result = classify(rawtext)
                 st.header('SDG Text document Classification')
