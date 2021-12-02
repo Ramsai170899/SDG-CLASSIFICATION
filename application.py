@@ -10,12 +10,8 @@ header = st.beta_container()
 body = st.beta_container()
 classify_container = st.beta_container()
 
-
-st.markdown(page_bg_img, unsafe_allow_html=True)
-
-
 def classify(a):
-    filename = 'pipe4_pickle'
+    filename = pipe4_pickle'
     model_reloaded = pickle.load(open(filename, 'rb'))
     
     te =[]
@@ -43,7 +39,7 @@ with header:
 
 with body:
     rawtext = st.text_area('Enter Text Here')
-    
+  
 
     uploaded_file = st.file_uploader(
         'Choose your .txt file', type="txt")
