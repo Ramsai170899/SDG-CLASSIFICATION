@@ -10,6 +10,18 @@ header = st.beta_container()
 body = st.beta_container()
 classify_container = st.beta_container()
 
+page_bg_img = '''
+<style>
+body {
+background-image: url("https://images.unsplash.com/photo-1542281286-9e0a16bb7366");
+background-size: cover;
+}
+</style>
+'''
+
+st.markdown(page_bg_img, unsafe_allow_html=True)
+
+
 def classify(a):
     filename = 'pipe4_pickle'
     model_reloaded = pickle.load(open(filename, 'rb'))
