@@ -40,12 +40,7 @@ with header:
 with body:
     
     rawtext = st.text_area('Enter Text Here')
-    [theme]
-    primaryColor="#F63366"
-    backgroundColor="#FFFFFF"
-    secondaryBackgroundColor="#F0F2F6"
-    textColor="#262730"
-    font="sans serif"
+
     uploaded_file = st.file_uploader(
         'Choose your .txt file', type="txt")
     if uploaded_file is not None:
