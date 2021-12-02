@@ -52,9 +52,9 @@ with body:
                 st.write('Please enter text or upload the file')
             else:
                 result = classify(rawtext)
-                st.header('Sdg Classification Results')
+                st.header('SDG Text document Classification')
                 st.dataframe(result)
-                df = pd.DataFrame(result, columns = ["Probability"])
-                df.sort_values(by=['Probability'], ascending=False)
+                df1 = pd.DataFrame(result, columns = ["Probability"])
+                df = df1.sort_values(by=['Probability'], ascending=False)
                 st.bar_chart(df)            
     
